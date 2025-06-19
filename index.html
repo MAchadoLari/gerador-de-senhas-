@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Identificação do aluno -->
+    <!-- Nome: Larissa dos Santos Machado - No 16 - Turma 3B -->
+
+    <header>
+        <h1>Gerador de Senhas 🔐</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="parametro-senha">
+                <h4>Características da Senha</h4>
+                
+                <div class="parametro-senha-checkbox">
+                    <input type="checkbox" id="maiusculo" class="checkbox" checked>
+                    <label for="maiusculo">Letras maiúsculas</label>
+                </div>
+                <div class="parametro-senha-checkbox">
+                    <input type="checkbox" id="minusculo" class="checkbox" checked>
+                    <label for="minusculo">Letras minúsculas</label>
+                </div>
+                <div class="parametro-senha-checkbox">
+                    <input type="checkbox" id="numero" class="checkbox" checked>
+                    <label for="numero">Números</label>
+                </div>
+                <div class="parametro-senha-checkbox">
+                    <input type="checkbox" id="simbolo" class="checkbox" checked>
+                    <label for="simbolo">Símbolos</label>
+                </div>
+
+                <input type="text" id="senha-gerada" placeholder="Senha gerada aqui" class="campo-senha" readonly>
+                <button id="gerar-senha">Gerar senha</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        Página criada por Larissa dos Santos Machado - Nº 16 - 3º ano B
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

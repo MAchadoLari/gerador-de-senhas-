@@ -1,0 +1,138 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a2a31; /* Fundo mais escuro */
+    color: #eaeaea; /* Texto claro */
+    padding: 40px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #64a82e; /* Verde escuro */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Container do formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Seção do gerador de senha */
+.parametro-senha {
+    background-color: #2d3a44; /* Fundo mais escuro para a caixa */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid #4c5a62; /* Borda prata */
+}
+
+/* Título da seção */
+.parametro-senha h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #64a82e; /* Verde escuro */
+}
+
+/* Estilo dos checkboxes */
+.parametro-senha-checkbox {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #eaeaea; /* Cor do texto */
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #64a82e; /* Verde para as checkboxes */
+}
+
+/* Estilo do campo de senha */
+.campo-senha {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 18px;
+    border: 1px solid #4c5a62; /* Borda prata */
+    border-radius: 8px;
+    background-color: #3a4d57; /* Cor mais escura no campo */
+    color: #eaeaea;
+    cursor: not-allowed;
+}
+
+.campo-senha:focus {
+    outline: none;
+    border-color: #64a82e; /* Borda verde quando focado */
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 18px;
+    background-color: #64a82e; /* Verde escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4c8b2f; /* Tom mais escuro de verde no hover */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #a6a6a6;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .parametro-senha {
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .parametro-senha h4 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
